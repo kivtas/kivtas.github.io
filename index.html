@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Satvik Dev | Software Development Engineer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>SATVIK DEV</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="https://drive.google.com/file/d/1FhJ757VcI9gS_tzp4aF_4KLq6Ic0gAg8/view?usp=sharing" class="nav-link" target="_blank">Resume</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="about">
+      <img
+        src="assets/images/bg.svg"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Hello! My name is Satvik and I'm a prospective software 
+          engineer graduating with a B.A. in Computer Science at UC Santa Cruz. 
+          My graduation date is June 2023. 
+          I'm currently based in the San Francisco Bay Area but am open 
+          to relocation for any future roles.
+        </p>
+        <p>
+          I'm enthusiastic about back-end development (and more specifically 
+          server-side development). My internship experience at Amazon taught 
+          me a lot about serverless architecture as I used tools provided by 
+          AWS to create a cloud-based solution to assist on-call engineers 
+          determine if certain developmental pipelines were healthy or unhealthy.
+
+        </p>
+      </div>
+    </section>
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        In addition to creating server-less solutions in AWS, I've also worked 
+        on proper server-side projects. I have experience creating a server using 
+        Flask to create a server for Python based to-do list. I've also made a partially 
+        functioning HTTP server in C that connects a client to a server and reads  
+        GET, HEAD, PUT, and POST requests formatted in standard HTTP/1.1.
+      </p>
+      <p>
+        Some of my personal hobbies consist of cooking, video games, and 
+        reading about political theory. I can cook a wide variety of dishes 
+        from American to Indian cuisine and absolutely love cooking for others. 
+      </p>
+      <p>
+        I also love to travel! In the United States, I've travelled to Southern California, 
+        Hawaii, New York City, Texas, Louisiana, and Wisconsin. Outside of the US, I've travelled to 
+        India, France, and Germany. In the future, my dream travel plans consist of visiting Japan, Sweden, 
+        China, Brazil, and South Africa.
+      </p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-python.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-java.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-c++.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-amazon-web-services.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git2.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-console-48.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/2do2.png"
+            alt="2do2"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">2Do2</h3>
+          <p class="project-details">
+            A simple to-do list that allows users to store tasks and 
+            their respective due dates. The front-end is done in JQuery, the back-end 
+            server is done in Python using Flask, and the database used is SQLite.
+          </p>
+          <a href="https://github.com/kivtas/2Do2" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/HTTP.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">HTTP Server</h3>
+          <p class="project-details">
+            This is a partially functioning HTTP server that I did in C. This server 
+            simulates a client and server communication. When running, a client 
+            can send a PUT, POST, HEAD, or GET response to the server and the server 
+            will produce a valid response assuming the request was sent in HTTP/1.1 format.
+          </p>
+          <a href="https://github.com/kivtas/HTTP-Server" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/website.png"
+            alt="website"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Personal Website</h3>
+          <p class="project-details">
+            The website you're currently browsing! This website is my first 
+            experience in front-end development and making it has been a really 
+            fun experience! The website is done in simple HTML, CSS, and JavsScript.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://www.instagram.com/satvikdev/" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/devsatvik/" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/kivtas" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+    </div>
+
+    <!-- Footer section -->
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+
